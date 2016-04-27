@@ -228,7 +228,15 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="javascript/bootstrap.min.js"></script>
 	<script src="javascript/script.js"></script>
-
+	
+	<script>
+		if(window.screen.width < 480) {
+			$("a[href$='#collapse1']").attr("aria-expanded","false")
+			$("a[href$='#collapse1']").addClass("collapsed")
+			$("div#collapse1").removeClass("in")
+			$("div#collapse1").addClass("collapse")
+		}
+	</script>
 
 </body>
 
